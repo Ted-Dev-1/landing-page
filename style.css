@@ -60,7 +60,7 @@ body{
 }
 
 .intro .title{
-    color: #979797;
+    color: #13183f;
     font-size: 1.4rem;
     line-height: 1.4;
 }
@@ -130,7 +130,7 @@ body{
 
 .card{
     color: #13183f;
-    background-color: #1d6972;
+    background-color: #979797;
     border-radius: 10px;
     cursor: pointer;
     padding: 40px 30px;
