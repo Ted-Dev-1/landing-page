@@ -66,7 +66,7 @@ body{
 }
 
 .message{
-    color: #e8d8d8;
+    color: #13183f;
     max-width: 400px;
     margin: 1.9rem 0 2.5rem;
 }
@@ -130,7 +130,7 @@ body{
 
 .card{
     color: #13183f;
-    background-color: #979797;
+    background-color: #f3eeee;
     border-radius: 10px;
     cursor: pointer;
     padding: 40px 30px;
