@@ -7,6 +7,10 @@
     font-family: "Plus Jakarta Sans", sans-serif;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 .banner{
     background-color: #fff;
     min-height: 100vh;
@@ -34,7 +38,7 @@
     font-weight: bold;
 }
 
-.container button{
+.container .but{
     border-radius: 50px;
     padding: 1em 2em;
     background-color: #13183f;
@@ -43,7 +47,7 @@
     border: none;
 }
 
-.container button:hover{
+.container .but:hover{
     background-color: #666CA3;
 }
 
@@ -51,11 +55,9 @@
 .hero .container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    /*gap: 400px;*/
     align-items: center;
     justify-content: center;
 }
-
 
 .intro .title{
     color: #13183f;
@@ -83,8 +85,28 @@
 }
 
 .item{
-    width: 123%;
-    transform: translate(25%,-10%);
+    position: relative;
+    
+}
+
+.main{
+    width: 125%;
+    transform: translate(8%,-40px);
+    position: relative;
+    z-index: 2;
+    
+    
+    
+}
+
+.overlay{
+    width: 100%;
+    /*height: 117%;*/
+    height: 100%;
+    position: absolute;
+    top: -22%;
+    right: -45%;
+    z-index: 1;
 }
 
 .cardbox{
@@ -138,4 +160,93 @@
 
 .link:hover{
     color: #f7a5b4;
+}
+
+.footer{
+    margin-top: 5rem;
+    width: 100%;
+    height: 5rem;
+    background-color: #13183f;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.foot{
+    padding: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 75rem;
+
+    width: 80%;
+    margin: 0 auto;
+}
+
+.foot .btn{
+    border-radius: 50px;
+    padding: 1em 2em;
+    background-image: linear-gradient(to bottom right, #4851FF, #F02AA6);
+    color: #fff;
+    cursor: pointer;
+    border: none;
+}
+
+.btn:hover{
+    background-image: linear-gradient(to bottom right, #9ca0f9, #f5b0dc);
+}
+
+.text{
+    color: #fff;
+}
+
+@media screen and (max-width: 800px) {
+    
+    
+
+}
+
+
+
+
+/* Mobile Phones (up to 600px) */
+@media (max-width: 600px) {
+    .hero{
+        padding-top: 20px;
+
+    }
+
+    .hero .container{
+        grid-template-columns: 1fr;
+    }
+
+    .main{
+        transform: none;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cardbox{
+        grid-template-columns: 1fr;
+    }
+
+    .overlay{
+        display: none;
+    }
+}
+
+/* Tablets (601px - 992px) */
+@media (min-width: 601px) and (max-width: 992px) {
+  
+
+    .hero .container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .cardbox{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
