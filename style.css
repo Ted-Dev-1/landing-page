@@ -17,7 +17,6 @@ body{
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     overflow: hidden;
 }
 
@@ -111,10 +110,13 @@ body{
     z-index: 1;
 }
 
+.card-container{
+    width: 100%;
+    background-image: linear-gradient(#FFFFFF, #F0F1FF);
+    padding-bottom: 5rem;
+}
+
 .cardbox{
-    padding: 50px;
-    outline: none;
-    background-image: linear-gradient(to bottom right, #FFFFFF, #F0F1FF);
     border-radius: 10px;
     display: grid;
     gap: 50px 20px;
@@ -174,7 +176,6 @@ body{
 }
 
 .footer{
-    margin-top: 5rem;
     width: 100%;
     height: 5rem;
     background-color: #13183f;
@@ -184,7 +185,8 @@ body{
 }
 
 .foot{
-    padding: 18px;
+    padding-top: 18px;
+    padding-bottom: 18px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
