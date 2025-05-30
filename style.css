@@ -45,6 +45,8 @@ body{
     color: #fff;
     cursor: pointer;
     border: none;
+    position: relative;
+    z-index: 3;
 }
 
 .container .but:hover{
